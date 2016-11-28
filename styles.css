@@ -12,6 +12,7 @@ html,body{
 
 #body{
     position: absolute;
+	top: 0px;
     background: url('http://www.zioncountry.com/wp-content/uploads/2015/11/highway.jpg');
     opacity: 0.6;
     width: 100%;
@@ -19,7 +20,7 @@ html,body{
     background-size: 100%;
 }
 
-#logo{
+#main img.logo{
     position: relative;
     display: block;
     height: 40%;
@@ -28,7 +29,7 @@ html,body{
     opacity:1;
 }
 
-#login{
+#login,#loggedin{
     position: relative;
     float: right;
     padding-right: 20px;
@@ -42,12 +43,39 @@ html,body{
     margin-right: 10px;
 }
 
-#login .button{
+#headerbar .button{
     border: 0px;
     background: white;
     box-shadow: none;
     height: 20px;
     border-radius: 20px;
+}
+
+#headerbar img.logo{
+	position: absolute;
+	height: 40px;
+	left: 30px;
+	top:2px;
+}
+
+#menu{
+	position: absolute;
+	left: 100px;
+	font-family: Helvetica,sans-serif;
+    color: white;
+	width: 70%;
+}
+
+#menu div{
+	float: left;
+	padding: 0px 40px 0px 40px;
+	margin: 10px 0px 15px 0px ;
+	border: #white solid 1px;
+	border-style: none solid none solid;
+}
+
+#menu div:hover{
+	background: #0A4728;
 }
 
 #main{
