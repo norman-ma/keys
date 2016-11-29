@@ -80,6 +80,9 @@
 	background: #0A4728;
 }
 
+#menu div.selected{
+	background: #0A4728;
+}
 #register{
 	position: relative;
 	top: 2px;

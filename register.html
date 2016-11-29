@@ -14,8 +14,9 @@
 				<input type='submit' value='Logout' id='logoutbutton' class='button'>
 			</div>
 			<div id='menu'>				
-				<div>Student Registration</div>
+				<div class='selected'>Student Registration</div>
 				<div>Scheduling</div>
+				<div>Vehicle Management</div>
 			</div>
 		</div>
 		<div id='main'>
@@ -93,10 +94,10 @@
 					<div id='payment'>
 						<span>Payment Method</span>
 						<form>
-							<span class='left'><input type='checkbox' name='payment' value='cash'>Cash</span><br/><br/>
-							<span class='left'><input type='checkbox' name='payment' value='cheque'>Cheque</span><br/><br/>
-							<span class='left'><input type='checkbox' name='payment' value='online'>Online</span><br/><br/>
-							<span class='left'><input type='checkbox' name='payment' value='other'>Other<input type='text' name='other' id='other' class='textfield'></span><br/><br/>
+							<span class='left'><input type='radio' name='payment' value='cash'>Cash</span><br/><br/>
+							<span class='left'><input type='radio' name='payment' value='cheque'>Cheque</span><br/><br/>
+							<span class='left'><input type='radio' name='payment' value='online'>Online</span><br/><br/>
+							<span class='left'><input type='radio' name='payment' value='other'>Other<input type='text' name='other' id='other' class='textfield'></span><br/><br/>
 						</form>
 						<span class='right'>Amount Paid<input type='text' name='paid' id='paid' class='textfield'></span><br/><br/>
 						<span class='right'>Package Balance<input type='text' name='balance' id='balance' class='textfield'></span><br/><br/>
