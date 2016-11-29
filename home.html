@@ -23,8 +23,11 @@
 				<div class='container'>
 					<h1>New Student Registration</h1>
 					<p></p>
+					<div id='pictureupload'>
+						<p>Please upload a picture<p> <input type='file'>
+					</div>
 					<div id='name'>
-						<label for='fullname'>Full Name</label><input type='text' name='fullname' id='fullname' class='textfield'>
+						<label for='fullname'>Full Name:</label><input type='text' name='fullname' id='fullname' class='textfield'>
 						<form>
 							Mrs <input type='radio' name='title1' value='Mrs'>
 							Ms <input type='radio' name='title1' value='Ms'>
@@ -32,7 +35,7 @@
 						</form>
 					</div>
 					<div id='contacts'>
-						Telephone #<br/>
+						<span>Telephone #</span><br/>
 						<label for='home#'>Home:</label><input type='text' name='home#' id='home#' class='textfield'>
 						<label for='work#'>Work:</label><input type='text' name='work#' work='work#' class='textfield'></br>
 						<label for='digi#'>Cellular #(Digicel):</label><input type='text' name='digi#' id='digi#' class='textfield'>
@@ -42,23 +45,74 @@
 					<div id='address'>
 						<label for='homeaddr'>Home Address:</label><textarea name='homeaddr' id='homeaddr' cols='40' rows='4'></textarea>
 						<label for='workaddr'>Work Address:</label><textarea name='workaddr' id='workaddr' cols='40' rows='4'></textarea><br/>
-						<label for='email'>Email Address:</label><input type='text' name='email' work='email'>
+						<label for='email'>Email Address:</label><input type='text' name='email' work='email' class='textfield'>
 					</div>	
 					<div id='contactperson'>
-						Contact Person:<br/>
-						<label for='fullname'>Full Name</label><input type='text' name='fullname' id='contactperson' class='textfield' class='textfield'>
+						<span>Contact Person:</span><br/>
+						<label for='fullname'>Full Name:</label><input type='text' name='fullname' id='contactpersonname' class='textfield' class='textfield'>
 						<form>
 							Mrs <input type='radio' name='title1' value='Mrs'>
 							Ms <input type='radio' name='title1' value='Ms'>
 							Mr <input type='radio' name='title1' value='Mr'> 
 						</form>
 						
-						Telephone #<br/>
+						<span>Telephone #</span><br/>
 						<label for='home#'>Home:</label><input type='text' name='home#' id='home#' class='textfield'>
-						<label for='work#'>Work:</label><input type='text' name='work#' work='work#' class='textfield'>
+						<label for='work#'>Work:</label><input type='text' name='work#' work='work#' class='textfield'></br>
 						<label for='digi#'>Cellular #(Digicel):</label><input type='text' name='digi#' id='digi#' class='textfield'>
 						<label for='lime#'>Cellular #(Lime):</label><input type='text' name='lime#' id='lime#' class='textfield'>
-						<label for='whatsapp#'>Cellular #(Lime):</label><input type='text' name='whatsapp#' id='whatsapp#' class='textfield'>
+					</div>
+					<div class='container'>
+						<div id='lessons'>
+							<p>
+								Indicate lessons with a tick in the appropriate boxes.
+							</p>
+							<form>
+								<span class='left'><input type='checkbox' name='lesson' value='privatecar' >Private Car</span>
+								<span class='right'><input type='checkbox' name='lesson' value='auto' >Automatic</span><br/><br/>
+								<span class='left'><input type='checkbox' name='lesson' value='genvan' >General Van</span>
+								<span class='right'><input type='checkbox' name='lesson' value='standard' >Standard</span><br/><br/>
+								<span class='left'><input type='checkbox' name='lesson' value='gentruck' >General Truck</span>							
+							</form>
+						</div>
+						<div id='days'>
+							<p>
+								Indicate days and times for driving.
+							</p>
+							<form>
+								<input type='checkbox' name='day' value='Monday' >Monday <span> From: <input type='time'> To: <input type='time'></span><br/><br/>
+								<input type='checkbox' name='day' value='Tuesday' >Tuesday <span> From: <input type='time'> To: <input type='time'></span><br/><br/>
+								<input type='checkbox' name='day' value='Wednesday' >Wednesday <span> From: <input type='time'> To: <input type='time'></span><br/><br/>
+								<input type='checkbox' name='day' value='Thursday' >Thursday <span> From: <input type='time'> To: <input type='time'></span><br/><br/>
+								<input type='checkbox' name='day' value='Friday' >Friday <span> From: <input type='time'> To: <input type='time'></span><br/><br/>
+								<input type='checkbox' name='day' value='Saturday' >Saturday <span> From: <input type='time'> To: <input type='time'></span><br/><br/>
+								<input type='checkbox' name='day' value='Sunday' >Sunday <span> From: <input type='time'> To: <input type='time'></span><br/><br/>
+							</form>
+						</div>
+					</div>
+					<div id='payment'>
+						<span>Payment Method</span>
+						<form>
+							<span class='left'><input type='checkbox' name='payment' value='cash'>Cash</span><br/><br/>
+							<span class='left'><input type='checkbox' name='payment' value='cheque'>Cheque</span><br/><br/>
+							<span class='left'><input type='checkbox' name='payment' value='online'>Online</span><br/><br/>
+							<span class='left'><input type='checkbox' name='payment' value='other'>Other<input type='text' name='other' id='other' class='textfield'></span><br/><br/>
+						</form>
+						<span class='right'>Amount Paid<input type='text' name='paid' id='paid' class='textfield'></span><br/><br/>
+						<span class='right'>Package Balance<input type='text' name='balance' id='balance' class='textfield'></span><br/><br/>
+					</div>
+					<div id='misc'>
+						<form>
+							Do you have any driving experience? <span><input type='radio' name='exp' value='yes'>Yes <input type='radio' name='exp' value='no'>No</span><br/><br/>
+							Do you have a valid driver's license? <span><input type='radio' name='license' value='yes'>Yes <input type='radio' name='license' value='no'>No</span><br/><br/>
+							Do you have any valid learner's permit? <span><input type='radio' name='permit' value='yes'>Yes <input type='radio' name='permit' value='no'>No</span><br/><br/>
+							Expiry Date of Lisense/Permit <span><input type='date' name='expiry' id='expiry'></span><br/><br/>
+							Tax Registration Number(TRN): <span><input type='text' name='trn' id='trn' class='textfield'></span></span>
+						</form>
+						<span>How did get to know about Keys? <textarea name='how' id='how' cols='100' rows='2'></textarea></span>						
+					</div>
+					<div id='control'>
+						<input type='submit' id='submit' value='Submit' class='button'> <a href=''>Cancel</a>
 					</div>
 				</div>
 			</div>

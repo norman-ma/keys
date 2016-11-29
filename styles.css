@@ -1,7 +1,7 @@
-html,body{
+ #html,body{
     padding: 0px;
     margin: 0px;
-    overflow: visible;
+    overflow-y: visible;
 }
 
 #headerbar{
@@ -98,14 +98,14 @@ html,body{
     height: 100%;
     width: 100%;
     overflow-y: auto;
+    overflow-x:hidden;
 }
 
 #registration{
-	padding: 0px 0px 10px 0px;
+	padding: 40px 0px 10px 0px;
 	position: relative;
 	background: white;
 	width: 80%;
-	height:150%;
 	left:10%;
 	font-family: Helvetica, sans-serif;
 	z-index: 1;
@@ -117,14 +117,23 @@ html,body{
 	padding-bottom: 30px;
 }
  #registration div{
- 	padding: 50px 20px 20px 20px;
+ 	padding: 10px 20px 20px 20px;
 	font-size: 20px;
+ }
+
+ #registration form{
+ 	position: relative;
+ 	top: -15px;
  }
 
  #registration .textfield{
 	border: solid black 1px;
 	border-style: none none solid none;
 	margin: 0px 0px 20px 0px
+ }
+
+ #registration label{
+ 	padding-right: 10px;
  }
 
  #registration #address label{
@@ -135,3 +144,90 @@ html,body{
  #registration #address label[for='email']{
 	 top:0px;
  }
+
+ #registration #fullname,#contactpersonname{
+ 	width: 500px;
+ }
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#registration #contactperson{
+	border-bottom: #558C41 solid 1px;
+}
+
+#lessons p,#days p{
+	font-size:18px;
+}
+
+#lessons span{
+	padding-bottom: 30px;
+}
+
+#lessons span.right, #days span{
+	position: absolute;
+	left: 200px;
+}
+
+#days{
+	position: relative;
+	left: 45%;
+	top: -206px;
+}
+
+.container div.container{
+	height: 380px;
+	border-bottom: #558C41 solid 1px;
+}
+
+#payment{
+	height: 170px;
+	border-bottom: #558C41 solid 1px;
+}
+
+#payment form{
+	position: relative;
+	top: 10px;
+	line-height: 15px;
+}
+
+#payment .right{
+	position: relative;
+	left: 350px;
+	top: -150px;	
+}
+
+#misc{
+	position: relative;
+	top: 30px;
+	border-bottom: #558C41 solid 1px;
+}
+
+#pictureupload{
+	font-size: 12px;
+	border-bottom: #558C41 dotted 1px;	
+}
+
+#control{
+	position: relative;
+	top: 30px;
+	left: 400px;
+	margin-bottom: 50px;
+}
+
+#control a{
+	font-size: 12px;
+	color: #858585;
+	text-decoration: none;
+}
+
+#control .button{
+	border: 0px;
+    background: #558C41;
+    box-shadow: none;
+	color: white;
+    height: 40px;
+	width: 60px;
+    border-radius: 20px;
+}
