@@ -13,13 +13,56 @@
 				<span id='username'></span>
 				<input type='submit' value='Logout' id='logoutbutton' class='button'>
 			</div>
-			<div id='menu'>
-				<div>Scheduling</div>
+			<div id='menu'>				
 				<div>Student Registration</div>
+				<div>Scheduling</div>
 			</div>
 		</div>
 		<div id='main'>
-			<div id='body'></div>
+			<div id='registration'>
+				<div class='container'>
+					<h1>New Student Registration</h1>
+					<p></p>
+					<div id='name'>
+						<label for='fullname'>Full Name</label><input type='text' name='fullname' id='fullname' class='textfield'>
+						<form>
+							Mrs <input type='radio' name='title1' value='Mrs'>
+							Ms <input type='radio' name='title1' value='Ms'>
+							Mr <input type='radio' name='title1' value='Mr'> 
+						</form>
+					</div>
+					<div id='contacts'>
+						Telephone #<br/>
+						<label for='home#'>Home:</label><input type='text' name='home#' id='home#' class='textfield'>
+						<label for='work#'>Work:</label><input type='text' name='work#' work='work#' class='textfield'></br>
+						<label for='digi#'>Cellular #(Digicel):</label><input type='text' name='digi#' id='digi#' class='textfield'>
+						<label for='lime#'>Cellular #(Lime):</label><input type='text' name='lime#' id='lime#' class='textfield'>
+						<label for='whatsapp#'>Whatsapp #:</label><input type='text' name='whatsapp#' id='whatsapp#' class='textfield'>
+					</div>
+					<div id='address'>
+						<label for='homeaddr'>Home Address:</label><textarea name='homeaddr' id='homeaddr' cols='40' rows='4'></textarea>
+						<label for='workaddr'>Work Address:</label><textarea name='workaddr' id='workaddr' cols='40' rows='4'></textarea><br/>
+						<label for='email'>Email Address:</label><input type='text' name='email' work='email'>
+					</div>	
+					<div id='contactperson'>
+						Contact Person:<br/>
+						<label for='fullname'>Full Name</label><input type='text' name='fullname' id='contactperson' class='textfield' class='textfield'>
+						<form>
+							Mrs <input type='radio' name='title1' value='Mrs'>
+							Ms <input type='radio' name='title1' value='Ms'>
+							Mr <input type='radio' name='title1' value='Mr'> 
+						</form>
+						
+						Telephone #<br/>
+						<label for='home#'>Home:</label><input type='text' name='home#' id='home#' class='textfield'>
+						<label for='work#'>Work:</label><input type='text' name='work#' work='work#' class='textfield'>
+						<label for='digi#'>Cellular #(Digicel):</label><input type='text' name='digi#' id='digi#' class='textfield'>
+						<label for='lime#'>Cellular #(Lime):</label><input type='text' name='lime#' id='lime#' class='textfield'>
+						<label for='whatsapp#'>Cellular #(Lime):</label><input type='text' name='whatsapp#' id='whatsapp#' class='textfield'>
+					</div>
+				</div>
+			</div>
+			<div id='bg'></div>			
 		</div>
 	</body>
 </html>
