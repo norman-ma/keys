@@ -1,0 +1,76 @@
+ #html,body{
+    padding: 0px;
+    margin: 0px;
+    overflow-y: visible;
+}
+
+#headerbar{
+    position: fixed;
+    width: 100%;
+    background:#558C41;
+    height: 45px;
+    z-index: 2;
+}
+
+#bg{
+    position: fixed;
+	top: 0px;
+    background: url('http://www.zioncountry.com/wp-content/uploads/2015/11/highway.jpg');
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+	z-index:0;
+}
+
+#main img.logo{
+    position: relative;
+    display: block;
+    height: 40%;
+    top: 250px;
+    margin:auto;
+    opacity:1;
+}
+
+#login{
+    position: relative;
+    float: right;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-family: Helvetica,sans-serif;
+    color: white;
+}
+
+#login .textfield{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.button{
+    border: 0px;
+    background: white;
+    box-shadow: none;
+    height: 20px;
+    border-radius: 20px;
+}
+
+#register{
+	position: relative;
+	top: 2px;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+#register a{
+	text-decoration:none;
+	color: white;
+}
+
+#main{
+    position:fixed;
+    background-color:#0A4728;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x:hidden;
+}

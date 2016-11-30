@@ -1,0 +1,243 @@
+ #html,body{
+    padding: 0px;
+    margin: 0px;
+    overflow-y: visible;
+}
+
+#headerbar{
+    position: fixed;
+    width: 100%;
+    background:#558C41;
+    height: 45px;
+    z-index: 2;
+}
+
+#bg{
+    position: fixed;
+	top: 0px;
+    background: url('http://www.zioncountry.com/wp-content/uploads/2015/11/highway.jpg');
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+	z-index:0;
+}
+
+#main img.logo{
+    position: relative;
+    display: block;
+    height: 40%;
+    top: 250px;
+    margin:auto;
+    opacity:1;
+}
+
+#loggedin{
+    position: relative;
+    float: right;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-family: Helvetica,sans-serif;
+    color: white;
+}
+
+.button{
+    border: 0px;
+    background: white;
+    box-shadow: none;
+    height: 20px;
+    border-radius: 20px;
+}
+
+#register{
+	position: relative;
+	top: 2px;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+#register a{
+	text-decoration:none;
+	color: white;
+}
+
+#main{
+    position:fixed;
+    background-color:#0A4728;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+
+.button{
+    border: 0px;
+    background: white;
+    box-shadow: none;
+    height: 20px;
+    border-radius: 20px;
+}
+
+#headerbar img.logo{
+	position: absolute;
+	height: 40px;
+	left: 30px;
+	top:2px;
+}
+
+#menu{
+	position: absolute;
+	left: 100px;
+	font-family: Helvetica,sans-serif;
+    color: white;
+	width: 70%;
+}
+
+#menu div{
+	float: left;
+	padding: 10px 40px 15px 40px;
+	border: white solid 1px;
+	border-style: none solid none solid;
+}
+
+#menu div:hover{
+	background: #0A4728;
+}
+
+#menu div.selected{
+	background: #0A4728;
+}
+
+
+#registration{
+	padding: 40px 0px 10px 0px;
+	position: relative;
+	background: white;
+	width: 80%;
+	left:10%;
+	font-family: Helvetica, sans-serif;
+	z-index: 1;
+}
+
+h1{
+	text-align: center;
+	border-bottom: #558C41 solid 1px;
+	padding-bottom: 30px;
+}
+
+ #registration div{
+ 	padding: 10px 20px 20px 20px;
+	font-size: 20px;
+ }
+
+ #registration form{
+ 	position: relative;
+ 	top: -15px;
+ }
+
+ .textfield{
+	border: solid black 1px;
+	border-style: none none solid none;
+	margin: 0px 0px 20px 0px
+ }
+
+ #registration label{
+ 	padding-right: 10px;
+ }
+
+ #registration #address label{
+ 	position: relative;
+ 	top: -50px;
+ }
+ 
+ #registration #address label[for='email']{
+	 top:0px;
+ }
+
+ #registration #fullname,#contactpersonname{
+ 	width: 500px;
+ }
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#registration #contactperson{
+	border-bottom: #558C41 solid 1px;
+}
+
+#lessons p,#days p{
+	font-size:18px;
+}
+
+#lessons span{
+	padding-bottom: 30px;
+}
+
+#lessons span.right, #days span{
+	position: absolute;
+	left: 200px;
+}
+
+#days{
+	position: relative;
+	left: 45%;
+	top: -206px;
+}
+
+.container div.container{
+	height: 380px;
+	border-bottom: #558C41 solid 1px;
+}
+
+#payment{
+	height: 170px;
+	border-bottom: #558C41 solid 1px;
+}
+
+#payment form{
+	position: relative;
+	top: 10px;
+	line-height: 15px;
+}
+
+#payment .right{
+	position: relative;
+	left: 350px;
+	top: -150px;	
+}
+
+#misc{
+	position: relative;
+	top: 30px;
+	border-bottom: #558C41 solid 1px;
+}
+
+#pictureupload{
+	font-size: 12px;
+	border-bottom: #558C41 dotted 1px;	
+}
+
+#control{
+	position: relative;
+	top: 30px;
+	left: 400px;
+	margin-bottom: 50px;
+}
+
+#control a{
+	font-size: 15px;
+	color: #858585;
+	text-decoration: none;
+}
+
+#control .button {
+	border: 0px;
+    background: #558C41;
+    box-shadow: none;
+	color: white;
+    height: 40px;
+	width: 60px;
+    border-radius: 20px;
+	text-align: center;
+}

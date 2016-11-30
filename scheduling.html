@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Keys Driving School</title>
+        <link href="scheduling.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div id='headerbar'>
+			<img src='logo.svg' class='logo'>
+			<div id='loggedin'>
+				<span id='username'></span>
+				<input type='submit' value='Logout' id='logoutbutton' class='button'>
+			</div>
+			<div id='menu'>				
+				<div>Student Registration</div>
+				<div  class='selected'>Scheduling</div>
+				<div>Vehicle Management</div>
+			</div>
+		</div>
+		<div id='main'>
+			<div id='schedule'>
+				<div class='container'>
+					<div id='add'>
+						<h3>New Lesson</h3>
+						<form>
+							<label for='Student'>Student Name:</label><input type='text' name='Student' id='sname' class='textfield'>
+							<label for='Instructor'>Instructor Name:</label><input type='text' name='Instructor' id='iname' class='textfield'></br>
+							<label for='Location'>Meetup Location:</label><input type='text' name='Location' id='location' class='textfield'></br>
+							<label for='Date'>Date:</label><input type='date' name='Date' id='date'>
+							<label for='StartTime'>Start Times:</label><input type='time' name='StartTime' id='start'>
+							<div id='control'>
+								<input type='submit' value='Add Lesson' id='addlesson' class='button'> <a href=''>Cancel</a>
+							</div>
+						</form>
+					</div>					
+				</div>
+				<div id='manage'>
+						<h3>Manage Lessons</h3>
+						<div class='search'>
+							<input type='text' name='search' id='vehiclesearch' class='textfield'><input type='submit' value='Search' id='vehiclesearchbutton' class='button'><br/>
+							Between </label><input type='date' name='from' id='from'> and </label><input type='date' name='to' id='to'>
+						</div>
+						<div id='result'>	
+							<table>
+								<tr>
+									<th>Student Name</th>
+									<th>Instructor Name</th>
+									<th>Date</th>
+									<th>Start Time</th>
+									<th>Meetup Location</th>
+								</tr>								
+							</table>
+						</div>
+						<div id='control'>
+							<input type='submit' id='submit' value='Save Changes' class='button'> <a href=''>Cancel</a>
+						</div>
+					</div>
+				</div>
+			<div id='bg'></div>			
+		</div>
+	</body>
+</html>
