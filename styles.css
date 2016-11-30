@@ -46,7 +46,7 @@
     margin-right: 10px;
 }
 
-#headerbar .button{
+.button{
     border: 0px;
     background: white;
     box-shadow: none;
@@ -104,7 +104,7 @@
     overflow-x:hidden;
 }
 
-#registration{
+#registration, #vehicle{
 	padding: 40px 0px 10px 0px;
 	position: relative;
 	background: white;
@@ -114,12 +114,18 @@
 	z-index: 1;
 }
 
-#registration h1{
+h1{
 	text-align: center;
 	border-bottom: #558C41 solid 1px;
 	padding-bottom: 30px;
 }
- #registration div{
+
+h3{
+	border-bottom: #558C41 solid 1px;
+	padding-bottom: 10px;
+}
+
+ #registration div, #vehicle div{
  	padding: 10px 20px 20px 20px;
 	font-size: 20px;
  }
@@ -129,7 +135,7 @@
  	top: -15px;
  }
 
- #registration .textfield{
+ .textfield{
 	border: solid black 1px;
 	border-style: none none solid none;
 	margin: 0px 0px 20px 0px
@@ -219,13 +225,13 @@ textarea:focus, input:focus{
 	margin-bottom: 50px;
 }
 
-#control a{
-	font-size: 12px;
+#control a, .search .all{
+	font-size: 15px;
 	color: #858585;
 	text-decoration: none;
 }
 
-#control .button{
+#control .button {
 	border: 0px;
     background: #558C41;
     box-shadow: none;
@@ -233,4 +239,55 @@ textarea:focus, input:focus{
     height: 40px;
 	width: 60px;
     border-radius: 20px;
+	text-align: center;
+}
+
+#add{
+	border-bottom: #558C41 solid 1px;	
+}
+
+#vehicle #control .button{
+	width: 120px;
+}
+
+#vehicle div{
+	font-size: 18px;
+}
+
+#vehicle .search{
+	position: relative;
+	margin-left: 20%;
+}
+
+.search input.textfield{
+	width: 500px; 
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+.search .button{
+	background: #558C41;
+	color: white;
+	border-radius: 3px;
+}
+
+#result th{
+	background: #558C41;
+	color: white;
+	font-size: 18px;
+	padding: 5px;
+}
+
+#result table{
+	border-collapse: collapse;
+}
+
+#result table, th {
+    border: 1px solid white;
+}
+
+#result td{
+	font-size: 16px;
+	border: 1px solid #558C41;
+	border-style: solid none;
 }

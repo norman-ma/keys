@@ -20,9 +20,43 @@
 			</div>
 		</div>
 		<div id='main'>
-			<div id='registration'>
+			<div id='vehicle'>
 				<div class='container'>
-					
+					<div id='add'>
+						<h3>New Vehicle</h3>
+						<form>
+							<label for='make'>Make:</label><input type='text' name='make' id='make' class='textfield'>
+							<label for='model'>Model:</label><input type='text' name='model' work='model' class='textfield'></br>
+							<label for='year'>Year:</label><input type='text' name='year' id='year' class='textfield'>
+							<label for='lic#'>License Plate #:</label><input type='text' name='lic#' id='lic#' class='textfield'>
+							<div id='control'>
+								<input type='submit' value='Add New Vehicle' id='addvehicle' class='button'> <a href=''>Cancel</a>
+							</div>
+						</form>
+					</div>
+					<div id='manage'>
+						<h3>Manage Vehicles</h3>
+						<div class='search'>
+							<input type='text' name='search' id='vehiclesearch' class='textfield'><input type='submit' value='Search' id='vehiclesearchbutton' class='button'> <span id='allvehicles' class='all'>All</span>
+						</div>
+						<div id='result'>	
+							<table>
+								<tr>
+									<th>License Plate Number</th>
+									<th>Make</th>
+									<th>Model</th>
+									<th>Year</th>
+									<th>General Status</th>
+									<th>Last Date Serviced</th>
+									<th>License Expires</th>
+									<th>Insurance Expires</th>
+								</tr>								
+							</table>
+						</div>
+						<div id='control'>
+						<input type='submit' id='submit' value='Save Changes' class='button'> <a href=''>Cancel</a>
+					</div>
+					</div>
 				</div>
 			</div>
 			<div id='bg'></div>			
